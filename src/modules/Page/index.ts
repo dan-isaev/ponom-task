@@ -1,3 +1,3 @@
-import { Page } from './Page';
+import { PageContainer } from './PageContainer';
 
-export { Page };
+export { PageContainer as Page };

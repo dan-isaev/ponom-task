@@ -17,6 +17,8 @@
     }
 
     &__text {
+        background: #fff;
+
         padding: 14px 20px 13px;
     }
 
@@ -29,12 +31,14 @@
         line-height: 26px;
     }
 
-    &__datePlace {
-        margin-bottom: 7px;
-
+    &__date, &__place {
         color: #606060;
         font-size: 13px;
         line-height: 24px;
+    }
+
+    &__place {
+        margin-bottom: 7px;
     }
 
     &__minPrice {

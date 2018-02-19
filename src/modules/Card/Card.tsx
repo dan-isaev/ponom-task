@@ -1,4 +1,7 @@
 import * as React from 'react';
+import LinesEllipsis from 'react-lines-ellipsis';
+import * as moment from 'moment';
+import 'moment/locale/ru';
 
 import './Card.css';
 import { Icon } from '../Icon';
@@ -26,10 +29,19 @@ export const Card = ({
                 </div>
             </div>
             <div className="card__text">
-                <div className="card__title">{title}</div>
-                <div className="card__datePlace">
-                    {date}<br />
-                    {place}
+                <div className="card__title" title={title}>
+                    <LinesEllipsis
+                        text={title}
+                        maxLine={2}
+                    />
+                </div>
+                <div className="card__date">
+                    {moment(date).format('D MMMM, HH:mm')}
+                </div>
+                <div className="card__place" title={place}>
+                    <LinesEllipsis
+                        text={place}
+                    />
                 </div>
                 <div className="card__minPrice">Билеты от {minPrice} &#8381;</div>
             </div>
