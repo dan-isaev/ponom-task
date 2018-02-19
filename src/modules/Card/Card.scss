@@ -1,0 +1,46 @@
+.card {
+    width: 300px;
+    height: 334px;
+
+    &__thumbnail {
+        height: 160px;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+
+        padding: 10px;
+    }
+
+    &__ribbon {
+        cursor: pointer;
+    }
+
+    &__text {
+        padding: 14px 20px 13px;
+    }
+
+    &__title {
+        height: 68px;
+
+        font-size: 18px;
+        font-weight: bold;
+        color: #202020;
+        line-height: 26px;
+    }
+
+    &__datePlace {
+        margin-bottom: 7px;
+
+        color: #606060;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    &__minPrice {
+        font-size: 12px;
+        font-weight: bold;
+        color: #2b2b2b;
+        text-transform: uppercase;
+    }
+}
