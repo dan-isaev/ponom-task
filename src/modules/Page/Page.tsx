@@ -11,7 +11,11 @@ export const Page = ({
 }: PageProps) => {
     return (
         <div className="page">
-            {children}
+            <div className="page__header" />
+            <div className="page__content">
+                {children}
+            </div>
+            <div className="page__footer" />
         </div>
     );
 };
